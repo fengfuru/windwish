@@ -8,10 +8,12 @@ import WindwishCommission from './commission/WindwishCommission';
 import WindwishShop from './shop/WindwishShop';
 import WindwishAbout from './about/WindwishAbout';
 
+const basename = import.meta.env.DEV ? '/' : '/windwish';
+
 function WindwishApp() {
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={basename}>
             <Routes>
                 <Route path="/" element={<WindwishNavigation />}>
                     <Route index element={<WindwishHome />}/>
