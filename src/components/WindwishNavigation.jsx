@@ -7,7 +7,7 @@ function WindwishNavigation() {
     return (
         <div>
             <Navbar>
-                <Container>
+                <Container id="WebsiteNavBar">
                     <Navbar.Brand>windwish</Navbar.Brand>
                     <Nav>
                         <Nav.Link as={Link} to="/">Home</Nav.Link>

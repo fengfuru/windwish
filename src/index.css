@@ -3,6 +3,11 @@ html, body {
     padding: 0;
 }
 
+html, body, p, div:not(#WebsiteNavBar):not(.navbar-nav) {
+    color: #D8DDDB;
+    background-color: #231F2E;
+}
+
 .navbar-brand {
 
 }
