@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+
+}
+
+.navbar {
+    background-color: #80ced7;
+    width: 100vw;
+}
+
+.homeImageContainer {
+    display: grid;
+    width: 100vw;
+    height: 93.8vh;
+}
+
+.homeImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Home Page Image Overlay*/
+.homeImageContainer::before {
+    content: '';
+    z-index: 10;
+    width: 100vw;
+    height: 93.8vh;
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+#CommissionPageContainer {
+    width: 100%;
+}
+
+#CommissionCard {
+    width: '12rem';
+}

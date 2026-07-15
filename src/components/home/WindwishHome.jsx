@@ -1,9 +1,13 @@
 import React, { memo } from "react";
 
+import HomeImg from '../../assets/HomeBanner.png';
+
 function WindwishHome() {
 
     return <>
-        <p>Home page</p>
+        <div class="homeImageContainer">
+            <img src={HomeImg} />
+        </div>
     </>
 }
 
